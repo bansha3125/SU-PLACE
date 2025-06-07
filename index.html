@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    body {
+      cursor: url('images/pointer1.png') 10 10, auto;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>성신여대 실내 위치 SU:PLACE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header">
+    <div class="logo-area">
+      <img src="sulogo.png" alt="로고" class="logo-icon">
+      <span class="logo-title">성신여대 SU:PLACE</span>
+    </div>
+    <div class="project-info">
+      <span><strong>AI융합학부 프로젝트</strong> / 제작자: 강민경 김윤서 반민서 / 문의: <a href="mailto:bms060721@gmail.com">bms060721@gmail.com</a></span>
+    </div>
+  </header>
+
+
+  <div class="page-wrapper">
+    <div class="sidebar">
+      <!-- 휴식공간 -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion('restAccordion')">휴식공간</button>
+        <div class="accordion-body" id="restAccordion">
+          <button onclick="showMarker(505, 505, 'images/ujtt.PNG')">운정뜰 (중앙도서관 1층)</button>
+          <button onclick="showMarker(505, 505, 'images/sml.PNG')">수미르 (중앙도서관 4층)</button>
+          <button onclick="showMarker(505, 505, 'images/charging.PNG')">차징룸 (중앙도서관 3,4,5,6층)</button>
+          <button onclick="showMarker(505, 505, 'images/shrang.PNG')">수하랑 (중앙도서관 2,7층)</button>
+          <button onclick="showMarker(575, 228, 'images/sleep.PNG')">수면실 (수정관 1층)</button>
+          <button onclick="showMarker(340, 260, 'images/sample1.PNG')">복합휴게실 (성신관 5층)</button>
+        </div>
+      </div>
+
+      <!-- 공부공간 -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion('studyAccordion')">공부공간</button>
+        <div class="accordion-body" id="studyAccordion">
+          <button onclick="toggleSubAccordion('studySungsin')">성신관</button>
+          <div class="sub-accordion-body" id="studySungsin" style="display: none; padding-left: 10px;">
+            <button onclick="showMarker(340, 260, 'images/ssg.PNG')">[열람실 가이드]</button>
+            <button onclick="showMarker(340, 260, 'images/ss2.PNG')">열람실 (2층)</button>
+            <button onclick="showMarker(340, 260, 'images/sample1.PNG')">수정마루 (5층)</button>
+            <button onclick="showMarker(340, 260, 'images/sample1.PNG')">대학원생 열람실 (7층)</button>
+          </div>
+
+          <button onclick="toggleSubAccordion('studySujeong')">수정관</button>
+          <div class="sub-accordion-body" id="studySujeong" style="display: none; padding-left: 10px;">
+            <button onclick="showMarker(575, 228, 'images/sjg.PNG')">[열람실 가이드]</button>
+            <button onclick="showMarker(575, 228, 'images/sample1.PNG')">수정스퀘어 (1층)</button>
+            <button onclick="showMarker(575, 228, 'images/sample1.PNG')">열람실 (5층 B동)</button>
+          </div>
+
+          <button onclick="toggleSubAccordion('studyLibrary')">중앙도서관</button>
+          <div class="sub-accordion-body" id="studyLibrary" style="display: none; padding-left: 10px;">
+            <button onclick="showMarker(505, 505, 'images/std.PNG')"> [층별 설명] </button>
+            <button onclick="showMarker(505, 505, 'images/focus.PNG')">집중열람실</button>
+            <button onclick="showMarker(505, 505, 'images/sample1.PNG')">개인열람실</button>
+            <button onclick="showMarker(505, 505, 'images/crystal.PNG')">크리스탈라운지</button>
+            <button onclick="showMarker(505, 505, 'images/central.PNG')">센트럴플라자</button>
+            <button onclick="showMarker(505, 505, 'images/sample1.PNG')">특성화학습관</button>
+            <button onclick="showMarker(505, 505, 'images/west.PNG')">서양서/문학자료실</button>
+            <button onclick="showMarker(505, 505, 'images/science.PNG')">인문과학자료실</button>
+            <button onclick="showMarker(505, 505, 'images/society1.PNG')">사회과학자료 제1실</button>
+            <button onclick="showMarker(505, 505, 'images/society2.PNG')">사회과학자료 제2실</button>
+            <button onclick="showMarker(505, 505, 'images/nature.PNG')">자연과학자료실</button>
+            <button onclick="showMarker(505, 505, 'images/history.PNG')">역사/예술자료실</button>
+            <button onclick="showMarker(505, 505, 'images/jjj.PNG')">전자정보실</button>
+            <button onclick="showMarker(505, 505, 'images/multi.PNG')">멀티미디어 스튜디오</button>
+            <button onclick="showMarker(505, 505, 'images/sample1.PNG')">크리에이티브 스튜디오</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 카페공간 -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion('cafeAccordion')">카페공간</button>
+        <div class="accordion-body" id="cafeAccordion">
+          <button onclick="showMarker(340, 260, 'images/shr.PNG')">수하루</button>
+          <button onclick="showMarker(575, 228, 'images/blp.PNG')">블루포트</button>
+          <button onclick="showMarker(575, 228, 'images/club.PNG')">CLUB 1847</button>
+        </div>
+      </div>
+
+      <!-- 식사공간 -->
+      <div class="accordion">
+        <button class="accordion-header" onclick="toggleAccordion('foodAccordion')">식사공간</button>
+        <div class="accordion-body" id="foodAccordion">
+          <button onclick="showMarker(575, 228, 'images/sample1.PNG')">교내1식당</button>
+          <button onclick="showMarker(115, 260, 'images/sample1.PNG')">교내2식당</button>
+          <button onclick="showMarker(575, 228, 'images/ing.PNG')">버거아이엔지</button>
+        </div>
+      </div>
+    </div>
+  <div class="content">
+    <div class="map-container" style="position: relative;">
+      <img src="map3.jpg" alt="성신여대 지도" class="map-image">
+      <div class="marker" id="marker"></div>
+      <img id="sujeong" src="images/cake.png" alt="수정이">
+
+      <!-- ✅ 좌측 상단 점수판 -->
+      <div style="position: absolute; top: 10px; left: 10px; z-index: 1001;">
+        <div id="score"
+            style="background: rgba(255,255,255,0.8); padding: 6px 12px; border-radius: 8px; font-weight: bold;">
+          점수: 0
+        </div>
+      </div>
+
+      <!-- ✅ 우측 상단 버튼 -->
+      <div style="position: absolute; top: 10px; right: 10px; z-index: 1001;">
+        <button id="toggleGameBtn"
+                style="padding: 6px 12px; font-size: 16px; background-color: #4a90e2; color: white; border: none; border-radius: 8px; cursor: pointer;">
+          게임 시작
+        </button>
+      </div>
+    </div>
+
+    <!-- ✅ 미리보기 패널 -->
+    <div id="preview" style="margin-top: 20px;"></div>
+  </div>
+
+  <!-- ✅ JS 연동 -->
+  <script src="main.js"></script>
+</body>
+
+
+
+
+</html>
