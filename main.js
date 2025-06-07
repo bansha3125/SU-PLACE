@@ -1,46 +1,46 @@
 // --------------------------- 데이터 정의 ---------------------------
 const data = {
   rest: [
-    { name: '운정뜰 (중앙도서관 1층)', x: 505, y: 505, img: 'images/ujtt.PNG' },
-    { name: '수미르 (중앙도서관 4층)', x: 505, y: 505, img: 'images/sml.PNG' },
-    { name: '차짐룸 (중앙도서관 3,4,5,6층)', x: 505, y: 505, img: 'images/charging.PNG' },
-    { name: '수하랑 (중앙도서관 2,7층)', x: 505, y: 505, img: 'images/shrang.PNG' },
-    { name: '수면실 (수정관 1층)', x: 575, y: 228, img: 'images/sleep.PNG' },
-    { name: '복합휴게실 (성신관 5층-501호)', x: 340, y: 260, img: 'images/sample1.PNG' }
+    { name: '운정뜰 (중앙도서관 1층)', x: 505, y: 505, img: 'images/ujtt.png' },
+    { name: '수미르 (중앙도서관 4층)', x: 505, y: 505, img: 'images/sml.png' },
+    { name: '차짐룸 (중앙도서관 3,4,5,6층)', x: 505, y: 505, img: 'images/charging.png' },
+    { name: '수하랑 (중앙도서관 2,7층)', x: 505, y: 505, img: 'images/shrang.png' },
+    { name: '수면실 (수정관 1층)', x: 575, y: 228, img: 'images/sleep.png' },
+    { name: '복합휴게실 (성신관 5층-501호)', x: 340, y: 260, img: 'images/sample1.png' }
   ],
   study: [
-    { name: '[열람실 가이드]', x: 340, y: 260, img: 'images/ssg.PNG' },
-    { name: '열람실 (2층)', x: 340, y: 260, img: 'images/ss2.PNG' },
-    { name: '수정마루 (5층)', x: 340, y: 260, img: 'images/sample1.PNG' },
-    { name: '대학원생 열람실 (7층)', x: 340, y: 260, img: 'images/sample1.PNG' },
-    { name: '[열람실 가이드]', x: 575, y: 228, img: 'images/sjg.PNG' },
-    { name: '수정스퀘어 (1층)', x: 575, y: 228, img: 'images/sample1.PNG' },
-    { name: '열람실 (5층 B동)', x: 575, y: 228, img: 'images/sample1.PNG' },
-    { name: '[층별 설명]', x: 505, y: 505, img: 'images/std.PNG' },
-    { name: '집중열람실', x: 505, y: 505, img: 'images/focus.PNG' },
-    { name: '개인열람실', x: 505, y: 505, img: 'images/sample1.PNG' },
-    { name: '크리스탈라운지', x: 505, y: 505, img: 'images/crystal.PNG' },
-    { name: '센트럴플라자', x: 505, y: 505, img: 'images/central.PNG' },
-    { name: '특성화학습관', x: 505, y: 505, img: 'images/sample1.PNG' },
-    { name: '서양서/문학자료실', x: 505, y: 505, img: 'images/west.PNG' },
-    { name: '인문과학자료실', x: 505, y: 505, img: 'images/science.PNG' },
-    { name: '사회과학자료 제1실', x: 505, y: 505, img: 'images/society1.PNG' },
-    { name: '사회과학자료 제2실', x: 505, y: 505, img: 'images/society2.PNG' },
-    { name: '자연과학자료실', x: 505, y: 505, img: 'images/nature.PNG' },
-    { name: '역사/예술자료실', x: 505, y: 505, img: 'images/history.PNG' },
-    { name: '전자정보실', x: 505, y: 505, img: 'images/jjj.PNG' },
-    { name: '멀티미디어 스튜디오', x: 505, y: 505, img: 'images/multi.PNG' },
-    { name: '크리에이티브 스튜디오', x: 505, y: 505, img: 'images/sample1.PNG' }
+    { name: '[열람실 가이드]', x: 340, y: 260, img: 'images/ssg.png' },
+    { name: '열람실 (2층)', x: 340, y: 260, img: 'images/ss2.png' },
+    { name: '수정마루 (5층)', x: 340, y: 260, img: 'images/sample1.png' },
+    { name: '대학원생 열람실 (7층)', x: 340, y: 260, img: 'images/sample1.png' },
+    { name: '[열람실 가이드]', x: 575, y: 228, img: 'images/sjg.png' },
+    { name: '수정스퀘어 (1층)', x: 575, y: 228, img: 'images/sample1.png' },
+    { name: '열람실 (5층 B동)', x: 575, y: 228, img: 'images/sample1.png' },
+    { name: '[층별 설명]', x: 505, y: 505, img: 'images/std.png' },
+    { name: '집중열람실', x: 505, y: 505, img: 'images/focus.png' },
+    { name: '개인열람실', x: 505, y: 505, img: 'images/sample1.png' },
+    { name: '크리스탈라운지', x: 505, y: 505, img: 'images/crystal.png' },
+    { name: '센트럴플라자', x: 505, y: 505, img: 'images/central.png' },
+    { name: '특성화학습관', x: 505, y: 505, img: 'images/sample1.png' },
+    { name: '서양서/문학자료실', x: 505, y: 505, img: 'images/west.png' },
+    { name: '인문과학자료실', x: 505, y: 505, img: 'images/science.png' },
+    { name: '사회과학자료 제1실', x: 505, y: 505, img: 'images/society1.png' },
+    { name: '사회과학자료 제2실', x: 505, y: 505, img: 'images/society2.png' },
+    { name: '자연과학자료실', x: 505, y: 505, img: 'images/nature.png' },
+    { name: '역사/예술자료실', x: 505, y: 505, img: 'images/history.png' },
+    { name: '전자정보실', x: 505, y: 505, img: 'images/jjj.png' },
+    { name: '멀티미디어 스튜디오', x: 505, y: 505, img: 'images/multi.png' },
+    { name: '크리에이티브 스튜디오', x: 505, y: 505, img: 'images/sample1.png' }
   ],
   cafe: [
-    { name: '수하루 (성신관 5층)', x: 340, y: 260, img: 'images/shr.PNG' },
-    { name: '블루포트 (수정관 1층)', x: 575, y: 228, img: 'images/blp.PNG' },
-    { name: 'CLUB 1847', x: 575, y: 228, img: 'images/club.PNG' }
+    { name: '수하루 (성신관 5층)', x: 340, y: 260, img: 'images/shr.png' },
+    { name: '블루포트 (수정관 1층)', x: 575, y: 228, img: 'images/blp.png' },
+    { name: 'CLUB 1847', x: 575, y: 228, img: 'images/club.png' }
   ],
   food: [
-    { name: '교내1식당 (수정관 A동 10층)', x: 575, y: 228, img: 'images/sample1.PNG' },
-    { name: '교내2식당 (난향관 3층)', x: 115, y: 260, img: 'images/sample1.PNG' },
-    { name: '버거아이엔지 (수정관 1층 난초방)', x: 575, y: 228, img: 'images/ing.PNG' }
+    { name: '교내1식당 (수정관 A동 10층)', x: 575, y: 228, img: 'images/sample1.png' },
+    { name: '교내2식당 (난향관 3층)', x: 115, y: 260, img: 'images/sample1.png' },
+    { name: '버거아이엔지 (수정관 1층 난초방)', x: 575, y: 228, img: 'images/ing.png' }
   ]
 };
 
